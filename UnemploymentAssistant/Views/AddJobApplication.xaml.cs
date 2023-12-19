@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace UnemploymentAssistant.Views
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for AddJobApplication.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class AddJobApplication : Window
     {
-        public Page1()
+        public AddJobApplication()
         {
             InitializeComponent();
         }

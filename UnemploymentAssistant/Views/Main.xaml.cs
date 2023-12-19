@@ -10,19 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UnemploymentAssistant.ViewModel;
 
-namespace UnemploymentAssistant
+namespace UnemploymentAssistant.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Main.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Main : Page
     {
-        public MainWindow()
+        public Main()
         {
             InitializeComponent();
+            MainViewModel mainViewModel = new MainViewModel();
+            this.DataContext = mainViewModel;
         }
     }
 }
