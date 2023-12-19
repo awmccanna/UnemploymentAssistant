@@ -10,6 +10,7 @@ namespace UnemploymentAssistant.Models
     public class JobApplicationManager
     {
         public static ObservableCollection<JobApplication> JobApplications = new ObservableCollection<JobApplication>() {
+            // Temp hardcode
             new JobApplication("Warner Bros Discovery", "Staff Software Engineer (R000074972)", DateTime.Today, "https://careers.wbd.com/global/en/job/R000074972/Staff-Software-Engineer"),
         };
 
