@@ -14,8 +14,10 @@
         <ListView Name="JobApplicationList" ItemsSource="{Binding JobApplications}" BorderBrush="#cdcdcd" Margin="25,70,25,25" Padding="0">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn DisplayMemberBinding="{Binding CompanyName}" Header="Company Name" Width="100"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding PositionName}" Header="Position Name" Width="100"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding CompanyName}" Header="Company Name" Width="200"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding PositionName}" Header="Position Name" Width="200"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding AppliedDate}" Header="Date" Width="150"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Url}" Header="Url" Width="100"/>
                 </GridView>
             </ListView.View>
         </ListView>

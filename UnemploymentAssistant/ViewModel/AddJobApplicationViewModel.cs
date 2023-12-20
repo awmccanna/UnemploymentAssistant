@@ -14,7 +14,7 @@ namespace UnemploymentAssistant.ViewModel
         public ICommand AddJobApplicationCommand { get; set; }
         public string CompanyName { get; set; }
         public string PositionName { get; set; }
-        public DateTime AppliedDate { get; set; }
+        public DateTime AppliedDate { get; set; } = DateTime.Today;
         public string Url { get; set; }
 
         public AddJobApplicationViewModel()
@@ -29,7 +29,7 @@ namespace UnemploymentAssistant.ViewModel
 
         private void AddJobApplication(object obj)
         {
-            JobApplicationManager.AddJobApplication(new JobApplication() { CompanyName = CompanyName, PositionName = PositionName, AppliedDate = DateTime.Now, Url = Url});
+            JobApplicationManager.AddJobApplication(new JobApplication() { CompanyName = CompanyName, PositionName = PositionName, AppliedDate = AppliedDate, Url = Url});
         }
     }
 }

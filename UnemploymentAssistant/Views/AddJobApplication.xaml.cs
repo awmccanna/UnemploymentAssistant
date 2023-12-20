@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UnemploymentAssistant.ViewModel;
 
 namespace UnemploymentAssistant.Views
 {
@@ -23,6 +24,9 @@ namespace UnemploymentAssistant.Views
         public AddJobApplication()
         {
             InitializeComponent();
+            AddJobApplicationViewModel addJobApplicationViewModel = new AddJobApplicationViewModel();
+            this.DataContext = addJobApplicationViewModel;
+            myDatePicker.SelectedDate = DateTime.Now;
         }
     }
 }

@@ -3,6 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
       xmlns:local="clr-namespace:UnemploymentAssistant.Views"
       mc:Ignorable="d" 
       d:DesignHeight="550" d:DesignWidth="800"
@@ -20,7 +21,7 @@
         <TextBox  Height="30" Width="200" Text="{Binding Url}" Margin="25,225" VerticalAlignment="Top" HorizontalAlignment="Left" BorderThickness="1" BorderBrush="#E0E0E0" />
 
         <Label Content="Date Applied" Margin="25, 300" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-        <DatePicker Height="30" Name="DatePicker1" Margin="25,325" VerticalAlignment="Top" HorizontalAlignment="Left" Width="115"/>
+        <DatePicker Height="30" SelectedDate="{Binding AppliedDate}" Name="myDatePicker" Margin="25,325" VerticalAlignment="Top" HorizontalAlignment="Left" Width="115"/>
 
 
         <Button Height="30" Command="{Binding AddJobApplicationCommand}" Content="Add" Width="70"  VerticalContentAlignment="Center" Padding="5" Margin="25" VerticalAlignment="Bottom" HorizontalAlignment="Right" BorderThickness="1" BorderBrush="#E0E0E0" />

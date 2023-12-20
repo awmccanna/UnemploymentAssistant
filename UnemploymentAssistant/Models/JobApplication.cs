@@ -28,7 +28,7 @@ namespace UnemploymentAssistant.Models
 
         public string PositionName { get; set; }
 
-        public DateTime AppliedDate { get; set; }
+        public DateTime AppliedDate { get; set; } = DateTime.Now;
 
         public string Url { get; set; }
     }
